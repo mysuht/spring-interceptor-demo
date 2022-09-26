@@ -21,7 +21,6 @@ public class SpringInterceptorController {
 		if(StringUtils.isBlank(student.getLastName())) {
 			throw new InvalidFieldException("Last NAME is a required field");
 		}
-		
 		return String.format("Authorization %s is valid, and Data is saved", authorization);
 	}
 }
